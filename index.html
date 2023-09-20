@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Calculator</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Pricing Calculator!</h1>
+        <section class="data-display"><p class="total-price"></p></section>
+</main>
+    <form class="pricing-form">
+            <!-- Price -->
+            <div>
+                <label for="price">Price</label>
+                <input type="number" name="price" id="price" value="50" min="0" />
+            </div>
+            <!-- Quantity -->
+            <div>
+                <label for="quantity">Quantity <span class="quantity-label"></span></label>
+                <input type="range" name="quantity" id="quantity" value="1" min="1" max="25" step="1" />
+            </div>
+        </form>
+    <script src="./main.js"></script>
+</body>
+</html>
